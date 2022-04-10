@@ -5,10 +5,12 @@ public class Server extends Employee {
     public double hourlyRate;
     public boolean fullTime;
 
+
     public Server(String name, int age, char gender, String jobTitle, int id, double salary, String companyName, double hourlyRate, boolean fullTime) {
-        super(name, age, gender, jobTitle, id, salary, companyName);
+        super(name, age, gender,jobTitle, id, salary, companyName);
         this.hourlyRate = hourlyRate;
         this.fullTime = fullTime;
+
     }
 
     public void takeOrder(){

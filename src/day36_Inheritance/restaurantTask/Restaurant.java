@@ -24,6 +24,31 @@ public class Restaurant {
         this.servers.addAll(Arrays.asList(servers));
     }
 
+    public void hireChef(Chef chef){
+        chefs.add(chef);
+    }
+
+    public void hireChef(Chef [] chefs){
+        this.chefs.addAll(Arrays.asList(chefs));
+    }
+
+    public void terminateChef(int employeeID){
+        chefs.removeIf(p-> p.id==employeeID);
+    }
+    public void terminateServer(int employeeID){
+        chefs.removeIf(p-> p.id==employeeID);
+    }
+
+    public String toString() {
+        return "Restaurant{" +
+                "owner='" + owner + '\'' +
+                ", location='" + location + '\'' +
+                ", number Of Stars=" + numberOfStars +'\''+
+                ", number Of Servers = " + servers.size() +'\''+
+                ", number Of Chefs = " + chefs.size() +'\''+
+
+                '}';
+    }
 }
 /*
 
@@ -50,11 +75,6 @@ public class Restaurant {
 	                toString(): Return (String) of all the information of a Restaurant object. No need to print the whole list of Servers or Chefs. Print the number of Servers and Chefs along side the other information
 
 
-		6.4. Create a class LocalRestaurant that has a main method with the following:
-	        	- Make a Restaurant object
-	        	- Create an array of servers with their information set. Add those initial servers to the ArrayList of Servers in the Restaurant object
-	            - Create an array of chefs with their information set. Add those initial chefs to the ArrayList of Chefs in the Restaurant object
 
-	            - Print your whole restaurants information
 
  */
