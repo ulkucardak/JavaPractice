@@ -6,8 +6,8 @@ public class Chef extends Employee {
     public double hourlyRate;
     public boolean fullTime;
 
-    public Chef(String name, int age, char gender, String jobTitle, int id, double salary, String companyName, double hourlyRate, boolean fullTime) {
-        super(name, age, gender, jobTitle, id, salary, companyName);
+    public Chef(String name, int age, char gender, int id, double salary, double hourlyRate, boolean fullTime) {
+        super(name, age, gender, "Chef", id, salary, "Nandoz");
         this.hourlyRate = hourlyRate;
         this.fullTime = fullTime;
     }

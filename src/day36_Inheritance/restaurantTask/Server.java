@@ -6,8 +6,8 @@ public class Server extends Employee {
     public boolean fullTime;
 
 
-    public Server(String name, int age, char gender, String jobTitle, int id, double salary, String companyName, double hourlyRate, boolean fullTime) {
-        super(name, age, gender,jobTitle, id, salary, companyName);
+    public Server(String name, int age, char gender, int id, double salary, double hourlyRate, boolean fullTime) {
+        super(name, age, gender,"Server", id, salary, "Nandoz");
         this.hourlyRate = hourlyRate;
         this.fullTime = fullTime;
 

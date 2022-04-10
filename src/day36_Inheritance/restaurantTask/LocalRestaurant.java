@@ -7,12 +7,12 @@ public class LocalRestaurant {
 
         Restaurant restaurant = new Restaurant("Ulku Cardak", "Enfield", 5);
 
-        Server server1 = new Server("Murat",19,'M',"server",123,20000,"Nandoz",10,false);
-        Server server2 = new Server("Betul",20, 'M',"server",567,250000,"Nandoz",10,true);
+        Server server1 = new Server("Murat",19,'M',123,20000,10,false);
+        Server server2 = new Server("Betul",20, 'M',567,250000,10,true);
         Server [] server = {server1, server2};
 
-        Chef chef1 = new Chef("Mehmet",45,'M',"Chef",890,300000,"Nandoz",15,true);
-        Chef chef2 = new Chef("Ahmet",25,'M',"Chef",12334,250000,"Nandoz",12, false);
+        Chef chef1 = new Chef("Mehmet",45,'M',890,300000,15,true);
+        Chef chef2 = new Chef("Ahmet",25,'M',12334,250000,12, false);
         Chef [] chef = {chef1, chef2};
 
        // restaurant.chefs.addAll(Arrays.asList(chef));
