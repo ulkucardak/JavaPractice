@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class LocalRestaurant {
     public static void main(String[] args) {
 
-        Restaurant restaurant = new Restaurant("Ulku Cardak", "Enfield", 5);
+       Restaurant restaurant = new Restaurant("Ulku Cardak", "Enfield", 5);
+
 
         Server server1 = new Server("Murat",19,'M',123,20000,10,false);
         Server server2 = new Server("Betul",20, 'M',567,250000,10,true);
@@ -15,11 +16,19 @@ public class LocalRestaurant {
         Chef chef2 = new Chef("Ahmet",25,'M',12334,250000,12, false);
         Chef [] chef = {chef1, chef2};
 
-       // restaurant.chefs.addAll(Arrays.asList(chef));
-        //restaurant.servers.addAll(Arrays.asList(server));
 
-        restaurant.hireChef(chef);
-        restaurant.hireServer(server);
+
+        //restaurant.hireChef(chef);
+
+        //restaurant.hireServer(server);
+
+
+
+        restaurant.chefs.addAll(Arrays.asList(chef));
+        restaurant.servers.addAll(Arrays.asList(server));
+
+
+
 
 
 

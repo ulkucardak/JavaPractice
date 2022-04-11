@@ -11,10 +11,19 @@ public class Restaurant {
     public ArrayList<Server> servers = new ArrayList<>();
     public ArrayList<Chef> chefs = new ArrayList<>();
 
+    public Restaurant(String owner, String location, int numberOfStars, ArrayList<Server> servers, ArrayList<Chef> chefs) {
+        this.owner = owner;
+        this.location = location;
+        this.numberOfStars = numberOfStars;
+        this.servers = servers;
+        this.chefs = chefs;
+    }
+
     public Restaurant(String owner, String location, int numberOfStars) {
         this.owner = owner;
         this.location = location;
         this.numberOfStars = numberOfStars;
+
     }
 
     public void hireServer (Server server){
