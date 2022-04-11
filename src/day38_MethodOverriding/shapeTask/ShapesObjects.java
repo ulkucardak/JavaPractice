@@ -12,7 +12,7 @@ public class ShapesObjects {
 
         System.out.println(rectangle1);
 
-        Square square1 = new Square(4);
+        Square square1 = new Square(9);
 
         System.out.println(square1);
 
